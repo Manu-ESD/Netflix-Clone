@@ -10,3 +10,7 @@ https://github.com/Manu-ESD/Netflix-Clone/blob/main/Demo-Video/Netflix-demo-vide
 https://github.com/Manu-ESD/Netflix-Clone/assets/124464914/bd9a6952-bf89-4661-ae94-59ca4d6060c5
 
 
+
+
+https://github.com/Manu-ESD/Netflix-Clone/assets/124464914/cfbc3890-08d0-4e5d-8b6c-8309bb89c511
+
