@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.netflix {
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navlist {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  background-image: url("./assets/Netflix-Logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 40px;
+  margin-right: 60%;
+  transform: scale(1.2);
+}
+
+.globe {
+  width: 20px;
+  height: 20px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+body > header > div > div.langselector.inline > ion-icon {
+  vertical-align: middle;
+}
+
+.signinbutton {
+  background-color: #e50914;
+  height: 32px;
+  padding: 4px 16px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  margin-left: 32px;
+  width: max-content;
+}
+
+.langselector {
+  height: 32px;
+  border: 0.2em solid white;
+  border-radius: 0.25rem;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.langoptions {
+  height: 32px;
+  background-color: transparent;
+  color: white;
+  font-weight: 400;
+  border: none;
+}
+
+/* hero */
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #161616b3;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("./assets/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.herotext {
+  color: aliceblue;
+  height: 25vh;
+  width: 75%;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.herotext h1 {
+  font-size: 2.75rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.herotext h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.herotext h6 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.Einput {
+  height: 56px;
+  width: 40%;
+  background-color: rgba(49, 49, 49, 0.7);
+  outline: none;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid rgba(174, 172, 172, 0.7);
+  line-height: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.getsbutton {
+  height: 56px;
+  font-size: 1.5rem;
+  background-color: #e50914;
+  padding: 4px 16px;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  margin-left: 32px;
+  width: max-content;
+}
+
+body > div > div > button > ion-icon {
+  vertical-align: text-top;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(238, 235, 235, 0.8);
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.regis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* content-right*/
+
+.content-right {
+  position: relative;
+  top: 85%;
+  height: 80%;
+  width: 100%;
+  background-color: black;
+  border-top: 5px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.c-text-right {
+  height: 100%;
+  width: 54%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-left: 10%;
+}
+
+.c-vis-right {
+  height: 100%;
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.tv {
+  background-image: url("./assets/tv.png");
+  z-index: 1;
+}
+
+.mobile {
+  background-image: url("./assets/mobile.jpg");
+  z-index: 1;
+}
+
+.device {
+}
+
+.children {
+  background-image: url("./assets/children.png");
+  z-index: 1;
+}
+
+.c-text-right > h1 {
+  margin-right: auto;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.c-text-right > p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.tv-animi {
+  position: relative;
+  top: 1%;
+  left: -26%;
+  width: 300px;
+  height: 200px;
+  z-index: 2;
+}
+
+.tv-animi video {
+  height: 180px;
+  width: 420px;
+}
+
+.device-animi {
+  position: relative;
+  top: -22%;
+  left: -110%;
+  width: 300px;
+  height: 200px;
+}
+
+.device-animi video {
+  height: 200px;
+  width: 280px;
+  z-index: 1;
+}
+
+.c-vis-right img {
+  position: relative;
+  left: 200px;
+  transform: scale(0.7);
+  z-index: 1000;
+}
+
+.loader {
+  height: 140px;
+  width: 140px;
+  object-fit: none;
+  border-radius: 50%;
+  transform: scale(0.2) !important;
+  position: relative;
+  top: -150px;
+  left: 90px !important;
+}
+
+.d-load {
+  position: relative;
+  top: 100px;
+  background-color: black;
+  height: 80px;
+  width: 420px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.pamplet {
+  position: relative;
+  height: 80px;
+  width: 70px;
+  top: 0px;
+  left: -80px !important;
+}
+
+.d-text {
+  position: relative;
+  top: -68px;
+  display: flexbox;
+  flex-direction: row;
+}
+
+.d-text h4 {
+  color: white;
+  font-size: 13px;
+  padding-left: 14px;
+}
+
+.d-text p {
+  color: rgb(4, 8, 134);
+  font-size: 13px;
+}
+
+/* FAQ */
+
+.FAQ {
+  position: relative;
+  top: 85%;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-top: 5px solid grey;
+  color: white;
+  padding: 6%;
+}
+
+.FAQ h1 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.FAQ button {
+  width: 100%;
+  height: 70px;
+  text-align: left;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+  margin-top: 30px;
+}
+
+.FAQ button:active {
+  background-color: #e50914;
+}
+
+.one-Q {
+  margin: auto;
+  width: 85%;
+}
+
+.two-Q {
+  margin: auto;
+  width: 100%;
+}
+
+.FAQ > div > button > i {
+  scale: 2;
+  margin-left: 80%;
+  vertical-align: baseline;
+  margin-right: 10px;
+  transition: all 0.7s;
+}
+
+#icon-two {
+  scale: 2;
+  margin-left: 65.7%;
+  vertical-align: baseline;
+  margin-right: 10px;
+  transition: all 0.7s;
+}
+
+.dropdown {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  background-color: rgba(128, 128, 128, 0.614);
+}
+
+.dropdown p {
+  margin-top: 20px;
+}
+
+.t-none {
+  display: none;
+}
+
+.t-active {
+  display: block;
+}
+
+.gummo {
+  transform: rotate(45deg);
+}
+
+/* footer */
+
+footer {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  top: 85%;
+  background-color: black;
+  border-top: 5px solid grey;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px 12%;
+  color: grey;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: underline;
+  text-decoration-color: white;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 20px 0px;
+}
+
+.options {
+  display: flex;
+  margin-bottom: 40px;
+}
+.options > ul {
+  margin-right: 20%;
+}
+
+.options > ul > li {
+  margin-top: 10px;
+}
+
+.f-button {
+  width: max-content !important;
+  color: black;
+}

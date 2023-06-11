@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Netflix-favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navlist">
+        <div class="logo inline"></div>
+        <div class="langselector inline">
+          <ion-icon
+            name="globe-outline"
+            style="color: white; height: 32px; width: 25px"
+          ></ion-icon>
+          <select class="langoptions">
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Telugu</option>
+          </select>
+        </div>
+        <button class="signinbutton inline">Sign In</button>
+      </div>
+    </header>
+    
+    <div class="netflix">
+        <div class="hero">
+            <div class="herotext">
+              <h1>Unlimited movies, TV shows and more</h1>
+              <h4>Watch anywhere. Cancel anytime.</h4>
+              <h6>
+                Ready to watch? Enter your email to create or restart your membership.
+              </h5>
+              <div class="regis">
+                  <input class="Einput" placeholder="Email address" type="email" />
+                  <button class="getsbutton">Get Started <ion-icon name="chevron-forward-outline"></ion-icon></button>
+              </div>
+            
+            </div>
+        </div>
+
+
+        <div class="content-right">
+            <div class="c-text-right">
+                <h1>Enjoy on your TV</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="c-vis-right tv">
+                <div class="tv-animi">
+                    <video autoplay loop muted src="./assets/video-tv-in-0819.m4v">
+                    </video>
+                </div>
+                
+            </div>
+
+                
+            
+        </div>
+
+        <div class="content-right">
+            <div class="c-vis-right mobile">
+                <div class="d-load">
+                    <img src="./assets/boxshot.png" class="pamplet" />
+                    <div class="d-text">
+                       <h4>Stranger Things</h4>
+                       <p>Downloading...</p>
+                    </div>
+                       <img class="loader" src="./assets/download.gif"/>
+                </div>
+    
+            </div>
+            <div class="c-text-right">
+                <h1>Download your shows to watch offline</h1>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+           
+        </div>
+
+        <div class="content-right">
+            <div class="c-text-right">
+                <h1>Watch everywhere</h1>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="c-vis-right device ">
+                <img src="./assets/device.png" />
+                <div class="device-animi">
+                   
+                    <video autoplay loop muted src="./assets/video-devices-in.m4v">
+                    </video>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="content-right">
+            <div class="c-vis-right children">
+    
+            </div>
+            <div class="c-text-right">
+                <h1>Create profiles for kids</h1>
+                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+           
+        </div>
+
+
+        <div class="FAQ">
+          <h1>Frequently Asked Questions</h1>
+          <div class="one-Q">
+            <button onclick="toggleDropdown()">
+              What is Netflix?
+              <i id="icon" class="fa-solid fa-plus" style="color: #fafafa;"></i>
+          </button>
+          <div id="ans" class="dropdown t-none">
+              <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+              <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+          </div>
+          <div class="two-Q">
+            <button onclick="toggletwo()">
+              How Much Does Netflix Cost?
+              <i id="icon-two" class="fa-solid fa-plus" style="color: #fafafa;"></i>
+          </button>
+          <div id="ans-two" class="dropdown t-none">
+              <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+          </div>
+
+        </div>
+         
+      </div>
+
+
+    </div>
+
+   
+
+
+    
+    <footer>
+      <div class="footer">
+        <p>Questions? Call <a>000-800-919-1694</a></p>
+        <div class="options">
+          <ul>
+            <li><a>FAQ</a></li>
+            <li><a>Media Center</a></li>
+            <li><a>Ways to Watch</a></li>
+            <li><a>Cookies preference</a></li>
+            <li><a>Speed test</a></li>
+          </ul>
+
+          <ul>
+            <li><a>Help Center</a></li>
+            <li><a>Invester Relationships</a></li>
+            <li><a>Terms of Use</a></li>
+            <li><a>Corporate Information</a></li>
+            <li><a>Legal Notices</a></li>
+          </ul>
+
+          <ul>
+            <li><a>Accounts</a></li>
+            <li><a>Jobs</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>Only on Netflix</a></li>
+          </ul>
+
+        </div>
+
+        <div class="langselector">
+          <ion-icon
+            name="globe-outline"
+            style="color: white; height: 32px; width: 25px"
+          ></ion-icon>
+          <select class="langoptions">
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Telugu</option>
+          </select>
+        </div>
+
+        <p>Netflix India</p>
+
+      </div>
+
+    </footer>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
